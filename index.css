@@ -1,0 +1,162 @@
+body {
+    text-align: center;
+}
+
+/* =================== CARTOON ONE ANIMATION================== */
+#cartoon-one {
+    animation: cartoon1 5s ease-in-out infinite;
+}
+
+@keyframes cartoon1 {
+    from {
+        transform: translateY(0px) scale(1,1);
+    }
+    to {
+        transform: translateY(-800px) scale(1.2,1.2);
+    }
+    
+}
+
+#cartoon1-mouth {
+    animation: cartoon1-mouth 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+@keyframes cartoon1-mouth {
+    10%, 20%, 30%{
+        transform: scale(0,0)
+    }
+    12%, 22%, 32%{
+        transform: scale(1,1);
+    }
+    
+}
+
+#cartoon1-eye{
+    animation: cartoon1-eye 1s linear infinite;
+    transform-origin: 1% 1%;
+    transform-box: fill-box;
+}
+
+@keyframes cartoon1-eye{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#cartoon1-cap{
+    animation: cartoon1-cap 5s linear infinite;
+}
+
+@keyframes cartoon1-cap{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: translate(-200px, 100px) rotate(360deg);
+    }
+}
+
+/* ============================================================ */
+
+
+/* =================== CARTOON TWO ANIMATION================== */
+
+#cartoon-two {
+    animation: cartoon2 1s linear infinite;
+}
+
+@keyframes cartoon2 {
+    from {
+        transform: translateY(0px) ;
+    }
+    to {
+        transform: translateY(-200px);
+
+    }
+}
+#cartoon2-mouth {
+    animation: cartoon2-cap 0.5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes cartoon2-cap {
+    10%{
+        transform: scale(0,0);
+    }
+    30%{
+        transform: scale(1,1);
+    }
+}
+
+#cartoon2-eye {
+    animation: cartoon2-eye 1s linear infinite;
+    transform-origin: 0.5%;
+    transform-box: fill-box;
+}
+
+@keyframes cartoon2-eye {
+    10%{
+        transform: translate(0px,0px);
+    }
+    20%{
+        transform: translate(20px,0);
+    }
+}
+
+
+
+/* ============================================================ */
+
+
+/* =================== CARTOON THREE ANIMATION================= */
+
+#cartoon-three {
+    animation: cartoon3 1s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+} 
+
+@keyframes cartoon3{
+    from {
+        transform: translateY(0px) rotate(0deg);
+    }
+    to{
+        transform: translateY(-100px) rotate(360deg);
+    }
+}
+
+#cartoon3-mouth {
+    animation: cartoon3-mouth 1s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+} 
+
+@keyframes cartoon3-mouth{
+    30% {
+        transform: scale(0,0);
+    }
+    40%{
+        transform: scale(1,1);
+    }
+}
+
+#cartoon3-eye {
+    animation: cartoon3-eye 1s linear infinite;
+} 
+
+@keyframes cartoon3-eye{
+    30% {
+        transform: translateY(10px);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+}
+/* ============================================================ */
